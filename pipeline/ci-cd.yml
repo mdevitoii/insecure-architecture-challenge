@@ -50,7 +50,7 @@ jobs:
         with:
           registry: 123456789012.dkr.ecr.us-east-1.amazonaws.com
           username: ci-reports
-          password: ${{ vars.REGISTRY_PASSWORD }}
+          password: ${{ SECRETS.REGISTRY_PASSWORD }}
       - name: Build and push image
         run: |
           docker build -t "$IMAGE:${{ steps.meta.outputs.tag }}" app/
