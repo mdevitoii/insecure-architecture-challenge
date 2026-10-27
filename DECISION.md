@@ -1,6 +1,6 @@
 # Team decision record
 
-Team name: <!-- same as your branch, e.g. cloud-crusaders -->
+Team name: AM
 
 ## Findings
 
@@ -8,7 +8,7 @@ One row per flaw. **Type** must be one of: `sensor`, `constraint`, `actuation`.
 
 | # | Where (file) | What is wrong | Type |
 |---|---|---|---|
-| 1 |  |  |  |
+| 1 | deploy-role-policy.json | Multiple resources with * (ALL) resources allocated, and user with create user permissions. | constraint |
 | 2 |  |  |  |
 | 3 |  |  |  |
 | 4 |  |  |  |
